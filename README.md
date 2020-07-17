@@ -20,4 +20,4 @@
 
 
 ### 三，设计模式之间的联系
-![avatar](./doc/relation.png)
+![avatar](http://qdl6whb56.bkt.clouddn.com/111111.png)
