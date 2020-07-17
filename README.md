@@ -20,4 +20,4 @@
 
 
 ### 三，设计模式之间的联系
-![avatar](http://qdl6whb56.bkt.clouddn.com/acmday.png)
+![avatar](http://qdl6whb56.bkt.clouddn.com/ocean.png)
