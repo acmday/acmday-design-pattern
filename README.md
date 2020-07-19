@@ -1,6 +1,9 @@
 # 设计模式实践
 
-### 一，设计模式六大原则
+### 一，使用说明
+- 程序入口都在test目录下
+
+### 二，设计模式六大原则
 
 - 开闭原则（Open Close Principle）
 - 里氏代换原则（Liskov Substitution Principle）
@@ -10,7 +13,7 @@
 - 单一职责原则（Single-Responsibility-Principle）
 
 
-### 二，组件设计原则
+### 三，组件设计原则
 
 - 重用-发布等价原则（REP）
 - 共同重用原则(CRP)
@@ -19,5 +22,5 @@
 - 稳定抽象原则(SAP)
 
 
-### 三，设计模式之间的联系
+### 四，设计模式之间的联系
 ![avatar](http://qdl6whb56.bkt.clouddn.com/ocean.png)
