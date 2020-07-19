@@ -1,7 +1,7 @@
-package com.acmday.design.pattern.server.service;
+package com.acmday.design.pattern.server.visitor;
 
-import com.acmday.design.pattern.server.service.impl.Engineer;
-import com.acmday.design.pattern.server.service.impl.Manager;
+import com.acmday.design.pattern.server.visitor.Engineer;
+import com.acmday.design.pattern.server.visitor.Manager;
 
 /**
  * @author acmday.

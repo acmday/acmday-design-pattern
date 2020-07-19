@@ -1,4 +1,4 @@
-package com.acmday.design.pattern.server.service;
+package com.acmday.design.pattern.server.observer;
 
 /**
  * @author acmday.

@@ -1,6 +1,4 @@
-package com.acmday.design.pattern.server.service.impl;
-
-import com.acmday.design.pattern.server.service.Observer;
+package com.acmday.design.pattern.server.observer;
 
 /**
  * @author acmday.

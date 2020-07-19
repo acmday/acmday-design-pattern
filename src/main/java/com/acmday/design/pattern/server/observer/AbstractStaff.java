@@ -1,6 +1,6 @@
-package com.acmday.design.pattern.server.service.abstracts;
+package com.acmday.design.pattern.server.observer;
 
-import com.acmday.design.pattern.server.service.Visitor;
+import com.acmday.design.pattern.server.visitor.Visitor;
 
 import java.util.Random;
 

@@ -1,7 +1,5 @@
-package com.acmday.design.pattern.server.service.impl;
+package com.acmday.design.pattern.server.observer;
 
-import com.acmday.design.pattern.server.service.Observer;
-import com.acmday.design.pattern.server.service.Subject;
 import org.apache.commons.collections.CollectionUtils;
 
 import java.util.ArrayList;
