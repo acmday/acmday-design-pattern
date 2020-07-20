@@ -11,5 +11,4 @@ public class NewCustomerManyStrategy implements IStrategy {
         System.out.println("新客户大批量，打九折");
         return standardPrice * 0.9;
     }
-
 }

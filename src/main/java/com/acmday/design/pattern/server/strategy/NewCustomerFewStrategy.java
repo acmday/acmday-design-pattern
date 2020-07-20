@@ -12,5 +12,4 @@ public class NewCustomerFewStrategy implements IStrategy {
         System.out.println("新客户小批量，不打折");
         return standardPrice;
     }
-
 }

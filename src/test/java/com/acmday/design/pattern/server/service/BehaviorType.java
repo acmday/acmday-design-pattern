@@ -1,20 +1,20 @@
 package com.acmday.design.pattern.server.service;
 
-import com.acmday.design.pattern.server.service.manage.ManageService;
-import com.acmday.design.pattern.server.strategy.OldCustomerManyStrategy;
-import com.acmday.design.pattern.server.visitor.BusinessReport;
-import com.acmday.design.pattern.server.chainOfResponsibility.ILeave;
 import com.acmday.design.pattern.server.chainOfResponsibility.AbstractHandler;
 import com.acmday.design.pattern.server.chainOfResponsibility.BigManager;
+import com.acmday.design.pattern.server.chainOfResponsibility.DeptManager;
+import com.acmday.design.pattern.server.chainOfResponsibility.GroupLeader;
+import com.acmday.design.pattern.server.chainOfResponsibility.ILeave;
+import com.acmday.design.pattern.server.chainOfResponsibility.Leave;
 import com.acmday.design.pattern.server.observer.CctvNewsSubject;
+import com.acmday.design.pattern.server.observer.DriverObserver;
 import com.acmday.design.pattern.server.observer.Subject;
+import com.acmday.design.pattern.server.observer.TeacherObserver;
+import com.acmday.design.pattern.server.strategy.OldCustomerManyStrategy;
+import com.acmday.design.pattern.server.strategy.StrategyHandler;
+import com.acmday.design.pattern.server.visitor.BusinessReport;
 import com.acmday.design.pattern.server.visitor.CeoVisitor;
 import com.acmday.design.pattern.server.visitor.CtoVisitor;
-import com.acmday.design.pattern.server.chainOfResponsibility.DeptManager;
-import com.acmday.design.pattern.server.observer.DriverObserver;
-import com.acmday.design.pattern.server.chainOfResponsibility.GroupLeader;
-import com.acmday.design.pattern.server.chainOfResponsibility.Leave;
-import com.acmday.design.pattern.server.observer.TeacherObserver;
 import org.junit.Test;
 
 /**
@@ -29,7 +29,8 @@ public class BehaviorType {
 
     @Test
     public void strategy() {
-        ManageService.getDiscount(new OldCustomerManyStrategy());
+        StrategyHandler handler = new StrategyHandler(new OldCustomerManyStrategy());
+        handler.getPrice(1000);
     }
 
     @Test
