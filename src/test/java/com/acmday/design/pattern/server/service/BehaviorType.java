@@ -26,6 +26,11 @@ import org.junit.Test;
 public class BehaviorType {
 
     @Test
+    public void strategy() {
+
+    }
+
+    @Test
     public void chainOfResponsibility() {
 
         ILeave leave = new Leave("小花",5,"身体不适");
