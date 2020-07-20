@@ -1,5 +1,7 @@
 package com.acmday.design.pattern.server.service;
 
+import com.acmday.design.pattern.server.service.manage.ManageService;
+import com.acmday.design.pattern.server.strategy.OldCustomerManyStrategy;
 import com.acmday.design.pattern.server.visitor.BusinessReport;
 import com.acmday.design.pattern.server.chainOfResponsibility.ILeave;
 import com.acmday.design.pattern.server.chainOfResponsibility.AbstractHandler;
@@ -27,7 +29,7 @@ public class BehaviorType {
 
     @Test
     public void strategy() {
-
+        ManageService.getDiscount(new OldCustomerManyStrategy());
     }
 
     @Test
