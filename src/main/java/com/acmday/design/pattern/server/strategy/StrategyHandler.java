@@ -17,7 +17,7 @@ public class StrategyHandler {
 
     public Double getPrice(double standardPrice) {
         double price = strategy.getPrice(standardPrice);
-        System.out.println("报价为：" + price);
-        return standardPrice *price;
+        System.out.println("标准价格为：" + standardPrice);
+        return price;
     }
 }

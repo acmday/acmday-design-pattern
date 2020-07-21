@@ -30,7 +30,8 @@ public class BehaviorType {
     @Test
     public void strategy() {
         StrategyHandler handler = new StrategyHandler(new OldCustomerManyStrategy());
-        handler.getPrice(1000);
+        Double price = handler.getPrice(1000);
+        System.out.println("实际价格：" + price);
     }
 
     @Test
