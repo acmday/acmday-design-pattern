@@ -6,6 +6,11 @@ import com.acmday.design.pattern.server.chainOfResponsibility.DeptManager;
 import com.acmday.design.pattern.server.chainOfResponsibility.GroupLeader;
 import com.acmday.design.pattern.server.chainOfResponsibility.ILeave;
 import com.acmday.design.pattern.server.chainOfResponsibility.Leave;
+import com.acmday.design.pattern.server.command.BakeChickenWingCommand;
+import com.acmday.design.pattern.server.command.BakeMuttonCommand;
+import com.acmday.design.pattern.server.command.Barbecuer;
+import com.acmday.design.pattern.server.command.Command;
+import com.acmday.design.pattern.server.command.Waiter;
 import com.acmday.design.pattern.server.observer.CctvNewsSubject;
 import com.acmday.design.pattern.server.observer.DriverObserver;
 import com.acmday.design.pattern.server.observer.Subject;
@@ -26,6 +31,18 @@ import org.junit.Test;
  * 访问者模式、中介者模式、解释器模式。
  */
 public class BehaviorType {
+
+    @Test
+    public void command() {
+        Command bakeMuttonCommand = new BakeMuttonCommand(new Barbecuer("烤羊肉"));
+        Command bakeChickenWingCommand = new BakeChickenWingCommand(new Barbecuer("烤鸡翅"));
+
+        Waiter girl = new Waiter();
+        girl.addOrder(bakeChickenWingCommand);
+        girl.addOrder(bakeMuttonCommand);
+
+        girl.notifyMessage();
+    }
 
     @Test
     public void strategy() {
