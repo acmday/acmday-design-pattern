@@ -11,6 +11,9 @@ import com.acmday.design.pattern.server.command.BakeMuttonCommand;
 import com.acmday.design.pattern.server.command.Barbecuer;
 import com.acmday.design.pattern.server.command.Command;
 import com.acmday.design.pattern.server.command.Waiter;
+import com.acmday.design.pattern.server.mediator.ConcreteMediator;
+import com.acmday.design.pattern.server.mediator.LiSi;
+import com.acmday.design.pattern.server.mediator.ZhangSan;
 import com.acmday.design.pattern.server.observer.CctvNewsSubject;
 import com.acmday.design.pattern.server.observer.DriverObserver;
 import com.acmday.design.pattern.server.observer.Subject;
@@ -31,6 +34,18 @@ import org.junit.Test;
  * 访问者模式、中介者模式、解释器模式。
  */
 public class BehaviorType {
+
+    @Test
+    public void mediator() {
+        ConcreteMediator mediator = new ConcreteMediator();
+        LiSi liSi = new LiSi(mediator);
+        mediator.setLiSi(liSi);
+        ZhangSan zhangSan = new ZhangSan(mediator);
+        mediator.setZhangSan(zhangSan);
+
+        zhangSan.send("你在哪？");
+        liSi.response("北京！");
+    }
 
     @Test
     public void command() {
