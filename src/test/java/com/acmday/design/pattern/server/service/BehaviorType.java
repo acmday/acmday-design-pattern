@@ -36,6 +36,11 @@ import org.junit.Test;
 public class BehaviorType {
 
     @Test
+    public void interpreter() {
+        //应用场景比较窄，略。
+    }
+
+    @Test
     public void mediator() {
         ConcreteMediator mediator = new ConcreteMediator();
         LiSi liSi = new LiSi(mediator);
