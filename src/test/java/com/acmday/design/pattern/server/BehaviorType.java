@@ -14,6 +14,8 @@ import com.acmday.design.pattern.server.observer.Subject;
 import com.acmday.design.pattern.server.observer.TeacherObserver;
 import com.acmday.design.pattern.server.strategy.OldCustomerManyStrategy;
 import com.acmday.design.pattern.server.strategy.StrategyHandler;
+import com.acmday.design.pattern.server.template.AbstractCaffeineBeverageWithHook;
+import com.acmday.design.pattern.server.template.CoffeeWithHookAbstract;
 import com.acmday.design.pattern.server.visitor.BusinessReport;
 import com.acmday.design.pattern.server.visitor.CeoVisitor;
 import com.acmday.design.pattern.server.visitor.CtoVisitor;
@@ -28,6 +30,12 @@ import org.junit.Test;
  * 解释器模式.
  */
 public class BehaviorType {
+
+    @Test
+    public void template() {
+        AbstractCaffeineBeverageWithHook coffeHook = new CoffeeWithHookAbstract();
+        coffeHook.prepare();
+    }
 
     @Test
     public void iterator() {
