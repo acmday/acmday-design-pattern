@@ -1,7 +1,5 @@
 package com.acmday.design.pattern.server.chainOfResponsibility;
 
-import com.acmday.design.pattern.server.chainOfResponsibility.ILeave;
-
 /**
  * @author acmday.
  * @date 2020/7/19.

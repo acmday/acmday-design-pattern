@@ -1,16 +1,10 @@
-package com.acmday.design.pattern.server.service;
+package com.acmday.design.pattern.server;
 
-import com.acmday.design.pattern.server.chainOfResponsibility.AbstractHandler;
-import com.acmday.design.pattern.server.chainOfResponsibility.BigManager;
-import com.acmday.design.pattern.server.chainOfResponsibility.DeptManager;
-import com.acmday.design.pattern.server.chainOfResponsibility.GroupLeader;
-import com.acmday.design.pattern.server.chainOfResponsibility.ILeave;
-import com.acmday.design.pattern.server.chainOfResponsibility.Leave;
-import com.acmday.design.pattern.server.command.BakeChickenWingCommand;
-import com.acmday.design.pattern.server.command.BakeMuttonCommand;
-import com.acmday.design.pattern.server.command.Barbecuer;
-import com.acmday.design.pattern.server.command.Command;
-import com.acmday.design.pattern.server.command.Waiter;
+import com.acmday.design.pattern.server.chainOfResponsibility.*;
+import com.acmday.design.pattern.server.command.*;
+import com.acmday.design.pattern.server.iterator.DinerMenu;
+import com.acmday.design.pattern.server.iterator.Iterator;
+import com.acmday.design.pattern.server.iterator.MenuItem;
 import com.acmday.design.pattern.server.mediator.ConcreteMediator;
 import com.acmday.design.pattern.server.mediator.LiSi;
 import com.acmday.design.pattern.server.mediator.ZhangSan;
@@ -29,11 +23,32 @@ import org.junit.Test;
  * @author acmday.
  * @date 2020/7/16.
  * 行为型模式共十一种：
- * 策略模式、模板方法模式、观察者模式、迭代子模式、
- * 责任链模式、命令模式、备忘录模式、状态模式、
- * 访问者模式、中介者模式、解释器模式。
+ * 观察者模式、访问者模式、责任链模式、策略模式、命令模式、中介者模式、备忘录模式
+ * 迭代子模式、模板方法模式、状态模式
+ * 解释器模式.
  */
 public class BehaviorType {
+
+    @Test
+    public void iterator() {
+
+        MenuItem[] menuItems = new MenuItem[10];
+
+        DinerMenu dinerMenu = new DinerMenu(menuItems);
+        Iterator iterator = dinerMenu.createIterator();
+
+        for(int i=0; i<7; ++i) {
+            String elem = String.valueOf(i);
+            dinerMenu.addItem(new MenuItem(elem, elem, elem, elem));
+        }
+        while (iterator.hasNext()){
+            System.out.println(iterator.next().toString());
+        }
+    }
+
+    // 见Memento类.
+    // @Test
+    // public void testMemento(){}
 
     @Test
     public void interpreter() {

@@ -1,8 +1,5 @@
 package com.acmday.design.pattern.server.visitor;
 
-import com.acmday.design.pattern.server.visitor.Engineer;
-import com.acmday.design.pattern.server.visitor.Manager;
-
 /**
  * @author acmday.
  * @date 2020/7/19.

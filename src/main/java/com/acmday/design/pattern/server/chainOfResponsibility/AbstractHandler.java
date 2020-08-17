@@ -42,6 +42,7 @@ public abstract class AbstractHandler {
 
     /**
      * 提交请假条
+     * 这个方法是核心方法.
      */
     public final void submit(ILeave leave){
         if(0 == this.numStart){
@@ -56,7 +57,7 @@ public abstract class AbstractHandler {
     }
 
     /**
-     * 各级领导处理请假条方法
+     * 各级领导处理请假条方法，这个属于“变动”的地方，因此放到子类实现.
      * @param leave
      */
     protected abstract void handleLeave(ILeave leave);

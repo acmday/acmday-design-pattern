@@ -20,7 +20,3 @@
 - 共同封闭原则（CCP)
 - 无环依赖原则
 - 稳定抽象原则(SAP)
-
-
-### 四，设计模式之间的联系
-![avatar](http://qdl6whb56.bkt.clouddn.com/ocean.png)

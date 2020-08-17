@@ -1,4 +1,4 @@
-package com.acmday.design.pattern.server.service.unit;
+package com.acmday.design.pattern.server.unit;
 
 import com.acmday.design.pattern.server.memento.ChessmanOriginator;
 import com.acmday.design.pattern.server.memento.MementoCaretaker;

@@ -1,9 +1,6 @@
 package com.acmday.design.pattern.server.visitor;
 
-import com.acmday.design.pattern.server.visitor.Visitor;
 import com.acmday.design.pattern.server.observer.AbstractStaff;
-import com.acmday.design.pattern.server.visitor.Engineer;
-import com.acmday.design.pattern.server.visitor.Manager;
 
 import java.util.LinkedList;
 import java.util.List;
