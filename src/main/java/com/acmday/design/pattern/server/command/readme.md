@@ -1,5 +1,6 @@
 
 ## 命令模式
+- 重要组成部分：invoker, receiver, command, concreteCommand
 
 ## 使用场景
 

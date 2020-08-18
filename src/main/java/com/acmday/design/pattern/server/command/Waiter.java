@@ -6,6 +6,7 @@ import java.util.Set;
 /**
  * @author acmday.
  * @date 2020/7/22.
+ * invoker:要求命令执行动作.
  */
 public class Waiter {
 

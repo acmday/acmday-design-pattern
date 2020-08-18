@@ -12,6 +12,6 @@ public class BakeChickenWingCommand extends Command {
 
     @Override
     public void executeCommand() {
-        receiver.bake(receiver.getMessage());
+        receiver.bake();
     }
 }
