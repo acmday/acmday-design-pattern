@@ -12,6 +12,10 @@ import com.acmday.design.pattern.server.observer.CctvNewsSubject;
 import com.acmday.design.pattern.server.observer.DriverObserver;
 import com.acmday.design.pattern.server.observer.Subject;
 import com.acmday.design.pattern.server.observer.TeacherObserver;
+import com.acmday.design.pattern.server.state.BookedState;
+import com.acmday.design.pattern.server.state.CheckedInState;
+import com.acmday.design.pattern.server.state.FreeState;
+import com.acmday.design.pattern.server.state.RoomContext;
 import com.acmday.design.pattern.server.strategy.OldCustomerManyStrategy;
 import com.acmday.design.pattern.server.strategy.StrategyHandler;
 import com.acmday.design.pattern.server.template.AbstractCaffeineBeverageWithHook;
@@ -30,6 +34,17 @@ import org.junit.Test;
  * 解释器模式.
  */
 public class BehaviorType {
+
+    @Test
+    public void state() {
+        RoomContext context = new RoomContext();
+        context.setState(new FreeState());
+        context.request(10010);
+        /*context.setState(new BookedState());
+        context.request(10010);
+        context.setState(new CheckedInState());
+        context.request(10010);*/
+    }
 
     @Test
     public void template() {
