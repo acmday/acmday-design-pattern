@@ -1,6 +1,12 @@
 package com.acmday.design.pattern.server;
 
+import com.acmday.design.pattern.server.abstractFactory.AbstractFactory;
+import com.acmday.design.pattern.server.abstractFactory.AppleFactory;
+import com.acmday.design.pattern.server.abstractFactory.MiFactory;
 import com.acmday.design.pattern.server.builder.*;
+import com.acmday.design.pattern.server.factory.Factory;
+import com.acmday.design.pattern.server.factory.FactoryA;
+import com.acmday.design.pattern.server.factory.FactoryB;
 import com.acmday.design.pattern.server.prototype.AbstractShape;
 import com.acmday.design.pattern.server.prototype.ShapeCache;
 import org.junit.Test;
@@ -13,6 +19,27 @@ import java.util.Date;
  * 创建型模式5种：工厂方法模式、抽象工厂模式、单例模式、建造者模式、原型模式
  */
 public class BuildType {
+
+    @Test
+    public void abstractFactory() {
+        AbstractFactory miFactory = new MiFactory();
+        AbstractFactory appleFactory = new AppleFactory();
+
+        miFactory.makeComputer().show();
+        miFactory.makePhone().show();
+
+        appleFactory.makeComputer().show();
+        appleFactory.makePhone().show();
+    }
+
+    @Test
+    public void factory() {
+        Factory factoryA = new FactoryA();
+        factoryA.makeProduct().show();
+
+        Factory factoryB = new FactoryB();
+        factoryB.makeProduct().show();
+    }
 
     @Test
     public void prototype() {
