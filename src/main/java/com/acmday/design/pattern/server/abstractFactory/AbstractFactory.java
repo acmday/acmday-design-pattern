@@ -1,7 +1,7 @@
 package com.acmday.design.pattern.server.abstractFactory;
 
 /**
- * @author wushaofeng.
+ * @author acmday.
  * @date 2020/8/19.
  */
 public abstract class AbstractFactory {
