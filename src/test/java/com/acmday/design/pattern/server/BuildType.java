@@ -9,16 +9,31 @@ import com.acmday.design.pattern.server.factory.FactoryA;
 import com.acmday.design.pattern.server.factory.FactoryB;
 import com.acmday.design.pattern.server.prototype.AbstractShape;
 import com.acmday.design.pattern.server.prototype.ShapeCache;
+import com.acmday.design.pattern.server.singleton.Singleton;
 import org.junit.Test;
+import org.springframework.util.StopWatch;
 
+import javax.swing.*;
 import java.util.Date;
 
 /**
  * @author acmday.
  * @date 2020/7/16.
- * 创建型模式5种：工厂方法模式、抽象工厂模式、单例模式、建造者模式、原型模式
+ * 创建型模式5种：建造者模式、原型模式、工厂方法模式、抽象工厂模式、单例模式
  */
 public class BuildType {
+
+    @Test
+    public void singleton() {
+        StopWatch watch = new StopWatch();
+        watch.start();
+        for(int i = 0; i < 100000; i++) {
+            Singleton.getInstance();
+            //Singleton.getInstanceCmp();
+        }
+        watch.stop();
+        System.out.println(watch.prettyPrint());
+    }
 
     @Test
     public void abstractFactory() {
