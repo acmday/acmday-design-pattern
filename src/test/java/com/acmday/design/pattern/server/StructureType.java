@@ -1,6 +1,10 @@
 package com.acmday.design.pattern.server;
 
 import com.acmday.design.pattern.server.adapter.*;
+import com.acmday.design.pattern.server.bridge.AbstractRoad;
+import com.acmday.design.pattern.server.bridge.Bus;
+import com.acmday.design.pattern.server.bridge.Car;
+import com.acmday.design.pattern.server.bridge.CementRoad;
 import com.acmday.design.pattern.server.decorator.*;
 import com.acmday.design.pattern.server.facade.Waiter;
 import com.acmday.design.pattern.server.proxy.Client;
@@ -11,9 +15,15 @@ import static com.acmday.design.pattern.server.flyweight.Client.compositFlyWeigh
 /**
  * @author acmday.
  * @date 2020/7/16.
- * 结构型模式共七种：外观模式、适配器模式、代理模式、装饰器模式、桥接模式、组合模式、享元模式。
+ * 结构型模式共七种：外观模式、适配器模式、代理模式、装饰器模式、享元模式、桥接模式、组合模式、。
  */
 public class StructureType {
+
+    @Test
+    public void bridge() {
+        AbstractRoad road = new CementRoad(new Bus());
+        road.driveOnRoad();
+    }
 
     @Test
     public void flyweight() {
