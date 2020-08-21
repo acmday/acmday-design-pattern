@@ -12,8 +12,6 @@ import com.acmday.design.pattern.server.observer.CctvNewsSubject;
 import com.acmday.design.pattern.server.observer.DriverObserver;
 import com.acmday.design.pattern.server.observer.Subject;
 import com.acmday.design.pattern.server.observer.TeacherObserver;
-import com.acmday.design.pattern.server.state.BookedState;
-import com.acmday.design.pattern.server.state.CheckedInState;
 import com.acmday.design.pattern.server.state.FreeState;
 import com.acmday.design.pattern.server.state.RoomContext;
 import com.acmday.design.pattern.server.strategy.OldCustomerManyStrategy;

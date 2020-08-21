@@ -3,7 +3,8 @@ package com.acmday.design.pattern.server;
 import com.acmday.design.pattern.server.abstractFactory.AbstractFactory;
 import com.acmday.design.pattern.server.abstractFactory.AppleFactory;
 import com.acmday.design.pattern.server.abstractFactory.MiFactory;
-import com.acmday.design.pattern.server.builder.*;
+import com.acmday.design.pattern.server.builder.Person;
+import com.acmday.design.pattern.server.builder.User;
 import com.acmday.design.pattern.server.factory.Factory;
 import com.acmday.design.pattern.server.factory.FactoryA;
 import com.acmday.design.pattern.server.factory.FactoryB;
@@ -13,7 +14,6 @@ import com.acmday.design.pattern.server.singleton.Singleton;
 import org.junit.Test;
 import org.springframework.util.StopWatch;
 
-import javax.swing.*;
 import java.util.Date;
 
 /**
