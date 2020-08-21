@@ -1,20 +1,15 @@
-package com.acmday.design.pattern.server.unit;
-
-import com.acmday.design.pattern.server.memento.ChessmanOriginator;
-import com.acmday.design.pattern.server.memento.MementoCaretaker;
-import org.junit.Test;
+package com.acmday.design.pattern.server.memento;
 
 /**
- * @author acmday.
- * @date 2020/7/20.
+ * @author wushaofeng.
+ * @date 2020/8/21.
  */
-public class Memento {
+public class Client {
 
     private static int index = -1;
     private static MementoCaretaker mc = new MementoCaretaker();
 
-    @Test
-    public void testMemento() {
+    public static void play() {
         ChessmanOriginator chess = new ChessmanOriginator("车", 1, 1);
         play(chess);
         chess.setY(4);
