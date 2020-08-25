@@ -3,6 +3,7 @@ package com.acmday.design.pattern.server.mediator;
 /**
  * @author acmday.
  * @date 2020/7/22.
+ * 做的工作可以理解为转发、路由.
  */
 public class ConcreteMediator implements Mediator{
 

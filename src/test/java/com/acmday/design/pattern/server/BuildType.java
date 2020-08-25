@@ -73,13 +73,13 @@ public class BuildType {
 
         ShapeCache.loadCache();
 
-        AbstractShape clonedShape = ShapeCache.getShape("1");
+        AbstractShape clonedShape = ShapeCache.getShape("circle");
         System.out.println("Shape : " + clonedShape.getType());
 
-        AbstractShape clonedShape2 = ShapeCache.getShape("2");
+        AbstractShape clonedShape2 = ShapeCache.getShape("rectangle");
         System.out.println("Shape : " + clonedShape2.getType());
 
-        AbstractShape clonedShape3 = ShapeCache.getShape("3");
+        AbstractShape clonedShape3 = ShapeCache.getShape("square");
         System.out.println("Shape : " + clonedShape3.getType());
     }
 }

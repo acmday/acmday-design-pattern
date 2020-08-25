@@ -18,15 +18,15 @@ public class ShapeCache {
 
     public static void loadCache() {
         Circle circle = new Circle();
-        circle.setId("1");
-        shapeMap.put(circle.getId(), circle);
+        circle.setName("circle");
+        shapeMap.put(circle.getName(), circle);
 
         Square square = new Square();
-        square.setId("2");
-        shapeMap.put(square.getId(), square);
+        square.setName("square");
+        shapeMap.put(square.getName(), square);
 
         Rectangle rectangle = new Rectangle();
-        rectangle.setId("3");
-        shapeMap.put(rectangle.getId(), rectangle);
+        rectangle.setName("rectangle");
+        shapeMap.put(rectangle.getName(), rectangle);
     }
 }
