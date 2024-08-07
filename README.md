@@ -5,15 +5,14 @@
 - 程序入口都在test目录下。
 - 在博客中提供各个设计模式的UML图-待完成。
 
-### 二，设计模式六大原则
-
-- 开闭原则（Open Close Principle）
-- 里氏代换原则（Liskov Substitution Principle）
-- 依赖倒置原则（Dependence Inversion Principle）
-- 接口隔离原则（Interface Segregation Principle）
-- 迪米特法则（最少知道原则）（Demeter Principle）
-- 单一职责原则（Single-Responsibility-Principle）
-
+### 二，设计模式七大原则
+- 开闭原则（Open Close Principle）：对扩展开放，对修改关闭。软件应该被设计成允许其功能的扩展，但是在做扩展的时候，不需要修改软件的核心代码。这样，改进或增加功能时，既能保持系统稳定，也能降低对现有系统的影响，并且提高系统的维护性和可扩展性。
+- 里氏代换原则（Liskov Substitution Principle）：不要破坏继承体系。子类对象应该能够替换掉它们的父类对象，而不会影响程序的功能。这意味着子类要保持与父类相同的行为，同时可以添加新的行为，但绝不能改变继承来的原有行为。如果子类的对象不能替换父类对象，那么任何依赖于父类对象的代码在执行时都有可能失败，因为它可能会遇到它并未预料到的子类行为。
+- 依赖倒置原则（Dependence Inversion Principle）：依赖倒置原则（Dependency Inversion Principle，DIP）是面向对象设计（OOD）五大原则（SOLID）之一。这个原则的基本思想是系统应该从具体的实现中抽象出来，使得上层模块（高层次的策略）不依赖于下层模块（具体的实现细节），而是两者都依赖于抽象概念。依赖倒置原则的两个核心观点是：高层模块不应依赖于低层模块。两者都应该依赖于抽象。抽象不应依赖于细节。细节应依赖于抽象。
+- 接口隔离原则（Interface Segregation Principle）：设计接口的时候要精简单一。调用方不应该被迫依赖于他们不使用的方法。也就是将臃肿的接口拆分成更小和更具体的接口.一个类对另一个类的依赖应该建立在最小的接口上。拆分大接口为多个专门的接口，让接口的实现者只需要实现它们真正需要的接口。减少或避免不必要的依赖：类间的依赖关系应该明确且有限。
+- 迪米特法则（最少知道原则）（Demeter Principle）：降低耦合度。"只与你直接的朋友交谈"，避免和"陌生人"通话。例如，如果有一个ClassA调用ClassB，那么ClassB就是ClassA的直接朋友，而ClassA不应该去调用ClassB的内部组件ClassC的方法。
+- 单一职责原则（Single-Responsibility-Principle）：一个类应该只有一个引起它变化的原因，也就是说，一个类应该只有一个职责。
+- 合成复用原则（Composite Reuse Principle, CRP）：优先使用组合或者聚合关系复用，少用继承关系复用。
 
 ### 三，组件设计原则
 
